@@ -1,0 +1,11 @@
+[Unit]
+Description=Утренний пост «Главное за день» (топ AI-новостей за сутки)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/tg-ai-news
+EnvironmentFile=%h/tg-ai-news/.env
+ExecStart=%h/tg-ai-news/.venv/bin/python %h/tg-ai-news/bot.py daily
+ExecStartPost=%h/tg-ai-news/.venv/bin/python %h/tg-ai-news/stats.py snapshot

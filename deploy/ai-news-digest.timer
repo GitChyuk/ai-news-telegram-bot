@@ -1,0 +1,12 @@
+[Unit]
+Description=Трижды в день запускать подборку AI-новостей (12:00, 16:00, 20:00)
+
+[Timer]
+OnCalendar=*-*-* 12:00:00
+OnCalendar=*-*-* 16:00:00
+OnCalendar=*-*-* 20:00:00
+Persistent=true
+RandomizedDelaySec=90
+
+[Install]
+WantedBy=timers.target

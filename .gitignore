@@ -1,0 +1,17 @@
+# Секреты и состояние — никогда не коммитить
+.env
+.ghtoken
+..env.swp
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Рабочее состояние бота
+seen.json
+seen.json.*
+stats.json
+
+# Внутренние маркетинговые материалы
+promo/

@@ -1,0 +1,14 @@
+[
+  "https://openai.com/news/rss.xml",
+  "https://deepmind.google/blog/rss.xml",
+  "https://blog.google/technology/ai/rss/",
+  "https://huggingface.co/blog/feed.xml",
+  "https://techcrunch.com/category/artificial-intelligence/feed/",
+  "https://venturebeat.com/category/ai/feed/",
+  "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+  "https://www.wired.com/feed/tag/ai/latest/rss",
+  "https://syncedreview.com/feed/",
+  "https://arxiv.org/rss/cs.AI",
+  "https://habr.com/ru/rss/hub/artificial_intelligence/?fl=ru",
+  "https://habr.com/ru/rss/hub/machine_learning/?fl=ru"
+]

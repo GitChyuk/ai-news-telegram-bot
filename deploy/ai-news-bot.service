@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram AI news aggregator
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/tg-ai-news
+EnvironmentFile=%h/tg-ai-news/.env
+ExecStart=%h/tg-ai-news/.venv/bin/python %h/tg-ai-news/bot.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

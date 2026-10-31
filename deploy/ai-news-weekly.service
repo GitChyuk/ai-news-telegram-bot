@@ -1,0 +1,10 @@
+[Unit]
+Description=Недельный пост «Топ-5 недели» (рекап, seen не трогаем)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/tg-ai-news
+EnvironmentFile=%h/tg-ai-news/.env
+ExecStart=%h/tg-ai-news/.venv/bin/python %h/tg-ai-news/bot.py weekly
